@@ -75,3 +75,30 @@ a{
     background: gray;
     text-align: center;
 }
+
+#setOfImages{
+    display: flex;
+}
+.imageCard{
+    /* display: inline; */
+    width: 23%;
+    background: gray;
+    margin: 2%;
+}
+.imageCard img{
+    margin: 10%;
+    width: 80%;
+    height: 15%;
+}
+.imageCard h3{
+    text-align: center;
+    color:blue;
+}
+.moredetails{
+    width:100%;
+    background: blue;
+    text-align: center;
+}
+.moredetails a{
+    color:white;
+}
