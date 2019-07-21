@@ -1,3 +1,7 @@
+<?php 
+    require('connectDb.php');
+?>
+
 <html>
     <head>
         <title>The contact page</title>
@@ -20,8 +24,8 @@
         <div class="topic"> Contact Us - Sri Lanka Travel and Tourism</div>
 
         <div id="content">
-        <form action="#" method="post">
-            <div class="formField">
+        <form action="#" method="post" id="formContent">
+            <div id="formField">
                 <label for="userName">Your name</label><br>
                 <input type="text" value="Name" name="userName"><br>
                 <label for="email">Email</label><br>
@@ -30,11 +34,16 @@
                 <input type="radio" name="nationality" id="SriLanka" value="Srilanka" required><br>
                 <label for="OtherNation">Other Nation</label>
                 <input type="radio" name="nationality" id="OtherNation" value="Other nation" required><br>
-                <input type="checkbox" name="checkbox[]" value="some">some<br>
-                <input type="checkbox" name="checkbox[]" value="thing">thing<br>
-                <input type="checkbox" name="checkbox[]" value="happend">Happend<br>
+                
+                
+                <input type="checkbox" name="checkbox[]" value="some" >some<br>
+                <input type="checkbox" name="checkbox[]" value="thing" >thing<br>
+                <input type="checkbox" name="checkbox[]" value="happend" >Happend<br>
+                
+            </div>
+            <div >
+                <textarea name="comment" cols = "60" rows="10"></textarea><br>
                 <input type="submit" name="submit" value="submit">
-        
             </div>
         </form>
                
@@ -43,10 +52,27 @@
 </html>
 
 <?php 
+    $checkboxinput = '';
     if(isset($_POST['submit'])){
+        
         foreach($_POST['checkbox'] as $selected){
-            echo $selected;
+            if($selected != null){
+                $checkboxinput .= $selected;
+            }
         }
-    }
+        $name = $_POST['userName'];
+        $email = $_POST['email'];
+        $nation = $_POST['nationality'];
+        $comment = $_POST['comment'];
 
+        echo $_POST['nationality'];
+        echo "<br>";
+        echo $checkboxinput;
+        $insertQuery = "insert into `contactDetails` (name,email,nation,interest,comment) values ('$name', '$email' ,'$nation','$checkboxinput','$comment')";
+
+        mysqli_query($conn,$insertQuery);
+    }
+    
+
+    
 ?>

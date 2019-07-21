@@ -24,6 +24,7 @@
             <div class="inlineNav"><a href="#">Contact</a></div>
         </div>
         <div class="topic"> Destinations</div>
+        
         <div id="setOfImages">
 
         <?php
@@ -50,45 +51,8 @@
         ?>
             
         </div>
-        <!-- <div id="setOfImages">
-                <div class="imageCard">
-                    <img src="images/6.jpg" alt="imageone">
-                    <h3>Anuradhapura</h3>
-                    <p>The ancient city of Anuradhapura was quite large in its 
-                        heyday, and so there is a lot of archaeology to see. </p>
-                    <div class="moredetails">
-                        <a href="#">more details</a>
-                    </div>
-                </div>
-                <div class="imageCard">
-                    <img src="images/6.jpg" alt="imageone">
-                    <h3>Anuradhapura</h3>
-                    <p>The ancient city of Anuradhapura was quite large in its 
-                        heyday, and so there is a lot of archaeology to see. </p>
-                    <div class="moredetails">
-                        <a href="#">more details</a>
-                    </div>
-                </div>
-                <div class="imageCard">
-                    <img src="images/6.jpg" alt="imageone">
-                    <h3>Anuradhapura</h3>
-                    <p>The ancient city of Anuradhapura was quite large in its 
-                        heyday, and so there is a lot of archaeology to see. </p>
-                    <div class="moredetails">
-                        <a href="#">more details</a>
-                    </div>
-                </div>
-                <div class="imageCard">
-                    <img src="images/6.jpg" alt="imageone">
-                    <h3>Anuradhapura</h3>
-                    <p>The ancient city of Anuradhapura was quite large in its 
-                        heyday, and so there is a lot of archaeology to see. </p>
-                    <div class="moredetails">
-                        <a href="#">more details</a>
-                    </div>
-                </div>
-                
-            </div> -->
+
+        <Center>
             <?php 
                 //paging
 
@@ -101,6 +65,7 @@
                     echo "<a href='destination?page=$i'>$i</a>";
                 }
             ?>
+        </Center>
 
         <div class="footer">
                 +94 999 888 111 info@sltravelandtourism.com © 2019 Sri Lanka Travel & Tourism 

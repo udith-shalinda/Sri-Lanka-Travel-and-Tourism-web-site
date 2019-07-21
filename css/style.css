@@ -102,6 +102,10 @@ a{
 .moredetails a{
     color:white;
 }
-#content{
+
+#formContent{
     display: flex;
+}
+#formField{
+    padding:10%;
 }
