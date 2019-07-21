@@ -102,3 +102,6 @@ a{
 .moredetails a{
     color:white;
 }
+#content{
+    display: flex;
+}

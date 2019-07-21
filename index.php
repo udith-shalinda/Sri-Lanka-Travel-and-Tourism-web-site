@@ -15,7 +15,7 @@
             <div class="inlineNav"><a href="#">Activities</a></div>
             <div class="inlineNav"><a href="#">Holiday Tours</a></div>
             <div class="inlineNav"><a href="#">Feedback</a></div>
-            <div class="inlineNav"><a href="#">Contact</a></div>
+            <div class="inlineNav"><a href="contact.php">Contact</a></div>
         </div>
         
         <div id="mainImage">
